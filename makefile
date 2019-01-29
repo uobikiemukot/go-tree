@@ -48,5 +48,9 @@ $(DST): $(SRC)
 
 build: $(DST)
 
+pack: clean lint
+	goimports -l `find . -type f -name "*.go"`
+	(cd ../; zip -r go-tree.zip go-tree/*)
+
 clean:
-	rm -f $(DST) *.prof *.test
+	rm -f $(DST) *.prof *.test *.zip

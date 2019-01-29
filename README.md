@@ -68,6 +68,10 @@ run `go vet` and `golint`
 
 create executable binary
 
+## pack
+
+create zip file including this repository 
+
 ## test
 
 test tree_test.go
