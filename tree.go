@@ -136,8 +136,6 @@ func walk(path string) *node {
 			n := node{
 				path: filepath.Clean(path),
 				info: info,
-				child: nil,
-				sibling: nil,
 			}
 			root.addNode(&n)
 		} else {
