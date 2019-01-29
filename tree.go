@@ -69,6 +69,8 @@ func (n *node) filename() string {
 	var name string
 
 	if colorized {
+		// ascii escape sequences
+		// ref: https://en.wikipedia.org/wiki/ANSI_escape_code#CSI_sequences
 		if n.info.IsDir() {
 			name += "\x1b[1;34m"
 		} else if (n.info.Mode().Perm() & 0111) != 0 {
