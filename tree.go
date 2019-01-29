@@ -15,7 +15,7 @@ type node struct {
 
 // some flags
 var colorized = false // enables colorized output for filename()
-var maxDepth = -1 // sets max depth for Print()
+var maxDepth = -1     // sets max depth for Print()
 
 // makeChild creates new child node if no child node exists
 func (n *node) makeChild(new *node) bool {
